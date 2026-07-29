@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #060606 0%, #121212 100%);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.about-page {
+    width: min(1160px, 100%);
+    margin: 0 auto;
+    padding: 36px 24px 48px;
+}
+
+.about-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.about-image-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-image-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.about-image-copy {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.about-image-copy h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+
+.about-image-copy p {
+    margin: 0;
+    color: #d3d3d3;
+    line-height: 1.7;
+}
+
+.banner {
+    background: #000000;
+    padding: 20px 24px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.banner-inner {
+    position: relative;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-logo img {
+    max-height: 110px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 4px 10px rgba(255, 255, 255, 0.18));
+}
+
+.banner-title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 2.2rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.intro-text,
+.brand-history {
+    width: min(90%, 900px);
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.brand-history {
+    margin-top: 24px;
+    padding: 0 12px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .about-images-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.brand-history h3 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.brand-history p {
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 800px;
+}
+
+
+.shop-hero {
+    height: min(72vh, 720px);
+    overflow: hidden;
+}
+
+.shop-hero video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.cart-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.cart-button:hover {
+    transform: translateY(-50%) scale(1.03);
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border: 1px solid #ffffff;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-cta-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    font-size: 1.1rem;
+    padding: 16px 36px;
+}
